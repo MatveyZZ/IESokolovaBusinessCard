@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Инициализация всех компонентов
     initMobileMenu();
-    initFilterButtons();
     initBackToTop();
     initSmoothScroll();
     initNotification();
@@ -31,43 +30,6 @@ function initMobileMenu() {
             });
         });
     }
-}
-
-// Фильтрация продуктов
-function initFilterButtons() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const productCards = document.querySelectorAll('.product-card');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Удаляем активный класс у всех кнопок
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Добавляем активный класс текущей кнопке
-            this.classList.add('active');
-            
-            const filterValue = this.getAttribute('data-filter');
-            
-            // Фильтруем продукты
-            productCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                
-                if (filterValue === 'all' || filterValue === category) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, 10);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 300);
-                }
-            });
-        });
-    });
 }
 
 // Кнопка "Наверх"
@@ -141,7 +103,7 @@ function initNotification() {
 // Анимации при скролле
 function initAnimations() {
     const animatedElements = document.querySelectorAll(
-        '.product-card, .advantage-card, .feature-card, .stat-item, .store-item'
+        '.advantage-card, .feature-card, .stat-item, .store-item, .product-category, .price-list-card'
     );
     
     const observer = new IntersectionObserver((entries) => {
@@ -177,6 +139,14 @@ function debounce(func, wait) {
 // Плавное появление элементов при загрузке
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
+});
+
+// Обработка внешних ссылок (для прайс-листа)
+document.querySelectorAll('a[href*="matveyzz.github.io"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Можно добавить аналитику или подтверждение
+        console.log('Переход к прайс-листу');
+    });
 });
 
 // Обработка ошибок изображений

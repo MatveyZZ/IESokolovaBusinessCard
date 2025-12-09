@@ -53,7 +53,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-frame">
-                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Пельмени ручной работы" class="hero-img">
+                        <!-- <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Пельмени ручной работы" class="hero-img"> -->
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">О нашем производстве</h2>
-                <p class="section-subtitle">19 лет качества и доверия</p>
+                <p class="section-subtitle">30 лет качества и доверия</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -78,7 +78,7 @@
                     
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number">19</div>
+                            <div class="stat-number">30</div>
                             <div class="stat-text">Лет на рынке</div>
                         </div>
                         <div class="stat-item">
@@ -126,87 +126,69 @@
                 <p class="section-subtitle">Вкус детства в каждой упаковке</p>
             </div>
             
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Вся продукция</button>
-                <button class="filter-btn" data-filter="pelmeni">Пельмени</button>
-                <button class="filter-btn" data-filter="kotleti">Котлеты</button>
-                <button class="filter-btn" data-filter="special">Специальные</button>
-            </div>
-            
-            <div class="products-grid">
-                <!-- Пельмени -->
-                <div class="product-card" data-category="pelmeni">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1626846115673-28e2f1be1385?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Пельмени "Сибирские"</h3>
-                        <p class="product-desc">Классические пельмени из отборной говядины и свинины с фирменными специями</p>
-                        <div class="product-tags">
-                            <span class="product-tag">Ручная лепка</span>
-                            <span class="product-tag">Натуральное мясо</span>
-                        </div>
+            <div class="products-content">
+                <div class="products-intro">
+                    <h3 class="products-intro-title">Широкий ассортимент полуфабрикатов</h3>
+                    <p class="products-intro-text">
+                        Мы производим широкий ассортимент вкусных и качественных полуфабрикатов, 
+                        которые помогут вам сэкономить время на кухне без ущерба для вкуса и качества.
+                    </p>
+                    <div class="footer-price-link">
+                        <a href="https://matveyzz.github.io/IESokolova/" target="_blank" class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i> Ознакомится с прайс листом
+                        </a>
                     </div>
-                </div>
-                
-                <div class="product-card" data-category="pelmeni">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1626194620140-6d4050b7de7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Пельмени "Крестьянские"</h3>
-                        <p class="product-desc">Сочная начинка из мяса с капустой по старинному рецепту</p>
-                        <div class="product-tags">
-                            <span class="product-tag">С капустой</span>
-                            <span class="product-tag">Домашние</span>
+                    
+                    <!-- <div class="products-list">
+                        <div class="product-category">
+                            <h4><i class="fas fa-dumpling"></i> Пельмени</h4>
+                            <ul>
+                                <li>"Сибирские" - классические из отборной говядины и свинины</li>
+                                <li>"Русские" - по традиционному рецепту</li>
+                                <li>"Киевские" - с особой рецептурой</li>
+                                <li>"Крестьянские" - мясо с капустой</li>
+                                <li>"Даниловские" - мясо с соевым белком</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Котлеты -->
-                <div class="product-card" data-category="kotleti">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Котлеты "Домашние"</h3>
-                        <p class="product-desc">Нежные котлеты из свинины и говядины с луком и специями</p>
-                        <div class="product-tags">
-                            <span class="product-tag">Классические</span>
-                            <span class="product-tag">Сочные</span>
+                        
+                        <div class="product-category">
+                            <h4><i class="fas fa-hamburger"></i> Котлеты и зразы</h4>
+                            <ul>
+                                <li>"Домашние" - нежные из свинины и говядины</li>
+                                <li>"Московские" - с добавлением сливочного масла</li>
+                                <li>"Аппетитные" - с фирменными специями</li>
+                                <li>"Деревенские" - по деревенскому рецепту</li>
+                                <li>Зразы с сыром</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="kotleti">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Котлеты "Московские"</h3>
-                        <p class="product-desc">Аппетитные котлеты с добавлением сливочного масла для особой нежности</p>
-                        <div class="product-tags">
-                            <span class="product-tag">Сливочные</span>
-                            <span class="product-tag">Премиум</span>
+                        
+                        <div class="product-category">
+                            <h4><i class="fas fa-utensils"></i> Специальные блюда</h4>
+                            <ul>
+                                <li>Фрикадельки для супа</li>
+                                <li>"Ёжики" и тефтели в соусе</li>
+                                <li>Купаты и колбаски</li>
+                                <li>Люля-кебаб с восточными специями</li>
+                                <li>Зразы и рубленые изделия</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Специальные -->
-                <div class="product-card" data-category="special">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Тефтели с рисом</h3>
-                        <p class="product-desc">Ароматные тефтели в томатном соусе, готовое блюдо для всей семьи</p>
-                        <div class="product-tags">
-                            <span class="product-tag">В соусе</span>
-                            <span class="product-tag">Готовое блюдо</span>
+                    </div> -->
+                    
+                    <!-- <div class="price-list-container">
+                        <div class="price-list-card">
+                            <div class="price-list-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="price-list-content">
+                                <h3 class="price-list-title">Полный прайс-лист</h3>
+                                <p class="price-list-text">Ознакомьтесь с полным ассортиментом и актуальными ценами на всю нашу продукцию</p>
+                                <a href="https://matveyzz.github.io/IESokolova/" target="_blank" class="btn btn-primary btn-large">
+                                    <i class="fas fa-external-link-alt"></i> Открыть прайс-лист
+                                </a>
+                                <p class="price-list-note">Прайс-лист откроется в новом окне</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="special">
-                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
-                    <div class="product-content">
-                        <h3 class="product-title">Люля-кебаб</h3>
-                        <p class="product-desc">Восточные специи и баранина - вкус настоящего кавказского люля</p>
-                        <div class="product-tags">
-                            <span class="product-tag">Восточный</span>
-                            <span class="product-tag">Острый</span>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -248,7 +230,7 @@
                 <div class="advantage-card">
                     <div class="advantage-number">05</div>
                     <h3 class="advantage-title">Гарантия качества</h3>
-                    <p class="advantage-desc">19 лет на рынке и тысячи довольных покупателей - лучшая рекомендация</p>
+                    <p class="advantage-desc">30 лет на рынке и тысячи довольных покупателей - лучшая рекомендация</p>
                 </div>
             </div>
         </div>
@@ -313,6 +295,36 @@
                             <p class="store-location">Возле ГИБДД, Лысково</p>
                         </div>
                     </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин №6</h3>
+                            <p class="store-location">Лысково</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин на Большой Советской ул.</h3>
+                            <p class="store-location">Лысково</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин №20</h3>
+                            <p class="store-location">Лысково</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="stores-map">
@@ -333,7 +345,12 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3 class="footer-title">ИП Соколова Н.С.</h3>
-                    <p class="footer-tagline">Натуральные полуфабрикаты ручной работы с 2003 года</p>
+                    <p class="footer-tagline">Натуральные полуфабрикаты ручной работы с 1995 года</p>
+                    <div class="footer-price-link">
+                        <a href="https://matveyzz.github.io/IESokolova/" target="_blank" class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i> Прайс-лист
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-info">
@@ -349,7 +366,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+7 (XXX) XXX-XX-XX</span>
+                            <span>+7 (831) 495-07-13</span>
                         </div>
                     </div>
                     
@@ -357,22 +374,18 @@
                         <h4 class="footer-section-title">Режим работы</h4>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
-                            <span>Пн-Пт: 8:00 - 18:00</span>
+                            <span>Пн-Пт: 8:00 - 16:00</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
-                            <span>Сб: 9:00 - 16:00</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Вс: выходной</span>
+                            <span>Сб-Вс: выходной</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">&copy; 2023 ИП Соколова Н.С. Все права защищены.</p>
+                <p class="copyright">&copy; 2025 ИП Соколова Н.С. Все права защищены.</p>
                 <p class="footer-note">Сайт создан на основе информации из публикации о предприятии</p>
             </div>
         </div>
@@ -394,6 +407,6 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
