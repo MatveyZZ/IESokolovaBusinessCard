@@ -1,0 +1,89 @@
+/* Исправления для скролла и фиксированного хедера */
+
+/* Основное исправление */
+html {
+    scroll-padding-top: 70px; /* Для всех якорей */
+}
+
+body {
+    padding-top: 70px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    html {
+        scroll-padding-top: 55px;
+    }
+    
+    body {
+        padding-top: 55px;
+    }
+}
+
+/* Убираем лишние отступы у секций */
+.section:first-of-type {
+    padding-top: 1rem;
+}
+
+/* Исправление для hero секции */
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: calc(100vh - 60px);
+    }
+}
+
+/* Плавная прокрутка к якорям */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Исправление для :target */
+:target {
+    scroll-margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    :target {
+        scroll-margin-top: 60px;
+    }
+}
+
+/* Для старых браузеров, которые не поддерживают scroll-padding */
+@supports not (scroll-padding-top: 70px) {
+    h2[id],
+    h3[id],
+    section[id] {
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+    
+    @media (max-width: 768px) {
+        h2[id],
+        h3[id],
+        section[id] {
+            padding-top: 60px;
+            margin-top: -60px;
+        }
+    }
+}
