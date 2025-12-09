@@ -798,3 +798,41 @@
         font-size: 3rem;
     }
 }
+
+/* Исправление для фиксированного хедера */
+body {
+    padding-top: 70px; /* Высота хедера */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Меньшая высота на мобильных */
+    }
+}
+
+/* Убираем верхний отступ у hero, т.к. он уже есть у body */
+.hero {
+    margin-top: 0 !important;
+}
+
+/* Добавляем прокручиваемые секции */
+.section {
+    scroll-margin-top: 80px; /* Для smooth scroll */
+}
+
+@media (max-width: 768px) {
+    .section {
+        scroll-margin-top: 70px;
+    }
+}
+
+/* Исправление для ссылок внутри страницы */
+:target {
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    :target {
+        scroll-margin-top: 70px;
+    }
+}

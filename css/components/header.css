@@ -6,13 +6,17 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 15px 0;
+    height: 100px; /* Фиксированная высота */
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%; /* Наследуем высоту */
 }
 
 .logo {

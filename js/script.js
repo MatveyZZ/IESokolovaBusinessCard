@@ -80,13 +80,29 @@ function initSmoothScroll() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                // Вычисляем высоту хедера
+                const header = document.querySelector('.header');
+                const headerHeight = header ? header.offsetHeight : 70;
+                
+                // Добавляем небольшой дополнительный отступ
+                const extraPadding = 20;
+                const targetPosition = targetElement.offsetTop - headerHeight - extraPadding;
                 
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+                
+                // Для мобильных - закрываем меню
+                const nav = document.querySelector('.nav');
+                const menuToggle = document.getElementById('menuToggle');
+                if (nav && nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    if (menuToggle) {
+                        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                }
             }
         });
     });
