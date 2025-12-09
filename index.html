@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИП Соколова Н.С. - Натуральные полуфабрикаты ручной работы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🍴</span>
+                    <div>
+                        <h1 class="logo-title">ИП Соколова Н.С.</h1>
+                        <p class="tagline">Натуральные полуфабрикаты ручной работы</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#products" class="nav-link">Продукция</a></li>
+                        <li><a href="#advantages" class="nav-link">Преимущества</a></li>
+                        <li><a href="#stores" class="nav-link">Где купить</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Пельмени и котлеты – всегда к столу!</h2>
+                    <p class="hero-subtitle">18 лет женщины проводят на кухне. Мы вернем вам это время!</p>
+                    <p class="hero-desc">Натуральные полуфабрикаты ручной работы из отборного мяса нижегородских фермеров</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">Наша продукция</a>
+                        <a href="#stores" class="btn btn-outline">Где купить</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Пельмени ручной работы" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">О нашем производстве</h2>
+                <p class="section-subtitle">19 лет качества и доверия</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">Наталья Соколова – индивидуальный предприниматель, руководитель цеха полуфабрикатов, деловая женщина. Поэтому как никто она знает цену времени, которого всегда не хватает.</p>
+                    
+                    <blockquote class="quote">
+                        <p>"Честность – главное в жизни и в бизнесе. Поэтому для меня качество продукции – не пустые слова."</p>
+                        <cite>— Наталья Сергеевна Соколова</cite>
+                    </blockquote>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">19</div>
+                            <div class="stat-text">Лет на рынке</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Натуральное мясо</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-text">Лет сотрудничества</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="feature-title">Натуральные ингредиенты</h3>
+                        <p>Только свежее мясо от нижегородских производителей и лысковских фермеров</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="feature-title">Итальянское оборудование</h3>
+                        <p>Единственная в Лысково итальянская линия для идеального качества</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="feature-title">Ручная работа</h3>
+                        <p>Пельмени ручной лепки по традиционным рецептам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наша продукция</h2>
+                <p class="section-subtitle">Вкус детства в каждой упаковке</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Вся продукция</button>
+                <button class="filter-btn" data-filter="pelmeni">Пельмени</button>
+                <button class="filter-btn" data-filter="kotleti">Котлеты</button>
+                <button class="filter-btn" data-filter="special">Специальные</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Пельмени -->
+                <div class="product-card" data-category="pelmeni">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1626846115673-28e2f1be1385?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пельмени "Сибирские"</h3>
+                        <p class="product-desc">Классические пельмени из отборной говядины и свинины с фирменными специями</p>
+                        <div class="product-tags">
+                            <span class="product-tag">Ручная лепка</span>
+                            <span class="product-tag">Натуральное мясо</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="pelmeni">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1626194620140-6d4050b7de7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пельмени "Крестьянские"</h3>
+                        <p class="product-desc">Сочная начинка из мяса с капустой по старинному рецепту</p>
+                        <div class="product-tags">
+                            <span class="product-tag">С капустой</span>
+                            <span class="product-tag">Домашние</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Котлеты -->
+                <div class="product-card" data-category="kotleti">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Котлеты "Домашние"</h3>
+                        <p class="product-desc">Нежные котлеты из свинины и говядины с луком и специями</p>
+                        <div class="product-tags">
+                            <span class="product-tag">Классические</span>
+                            <span class="product-tag">Сочные</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kotleti">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Котлеты "Московские"</h3>
+                        <p class="product-desc">Аппетитные котлеты с добавлением сливочного масла для особой нежности</p>
+                        <div class="product-tags">
+                            <span class="product-tag">Сливочные</span>
+                            <span class="product-tag">Премиум</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Специальные -->
+                <div class="product-card" data-category="special">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Тефтели с рисом</h3>
+                        <p class="product-desc">Ароматные тефтели в томатном соусе, готовое блюдо для всей семьи</p>
+                        <div class="product-tags">
+                            <span class="product-tag">В соусе</span>
+                            <span class="product-tag">Готовое блюдо</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="special">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Люля-кебаб</h3>
+                        <p class="product-desc">Восточные специи и баранина - вкус настоящего кавказского люля</p>
+                        <div class="product-tags">
+                            <span class="product-tag">Восточный</span>
+                            <span class="product-tag">Острый</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="section advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">5 причин покупать у нас</h2>
+                <p class="section-subtitle">Почему выбирают нашу продукцию</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">01</div>
+                    <h3 class="advantage-title">Натуральные продукты</h3>
+                    <p class="advantage-desc">Только свежее мясо от проверенных нижегородских производителей, никаких замороженных полуфабрикатов</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">02</div>
+                    <h3 class="advantage-title">Современное оборудование</h3>
+                    <p class="advantage-desc">Итальянская линия для производства обеспечивает идеальное качество и текстуру</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">03</div>
+                    <h3 class="advantage-title">Фирменные специи</h3>
+                    <p class="advantage-desc">Особый, проверенный набор специй, придающий неповторимый вкус нашей продукции</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">04</div>
+                    <h3 class="advantage-title">Доступная цена</h3>
+                    <p class="advantage-desc">Мы стремимся сделать качественные полуфабрикаты доступными для каждой семьи</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-number">05</div>
+                    <h3 class="advantage-title">Гарантия качества</h3>
+                    <p class="advantage-desc">19 лет на рынке и тысячи довольных покупателей - лучшая рекомендация</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stores Section -->
+    <section id="stores" class="section stores">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Где купить</h2>
+                <p class="section-subtitle">Наши точки продаж в Лысково и области</p>
+            </div>
+            
+            <div class="stores-container">
+                <div class="stores-list">
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин "Венец"</h3>
+                            <p class="store-location">Лысково</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин на Гражданской улице</h3>
+                            <p class="store-location">Лысково</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Сеть "Макарий"</h3>
+                            <p class="store-location">Различные торговые точки</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Хлебозавод "Лысковский"</h3>
+                            <p class="store-location">Торговые точки сети</p>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item">
+                        <div class="store-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="store-info">
+                            <h3 class="store-name">Магазин "Литвинцев"</h3>
+                            <p class="store-location">Возле ГИБДД, Лысково</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stores-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Также в других городах</h3>
+                        <p>Княгинино, Большое Мурашкино, Сергач, Пильна</p>
+                        <p class="map-note">Покупая нашу продукцию, вы поддерживаете местных производителей!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="footer-title">ИП Соколова Н.С.</h3>
+                    <p class="footer-tagline">Натуральные полуфабрикаты ручной работы с 2003 года</p>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Контакты</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <span>Соколова Наталья Сергеевна</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Цех полуфабрикатов, г. Лысково</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (XXX) XXX-XX-XX</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Режим работы</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Пт: 8:00 - 18:00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Сб: 9:00 - 16:00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Вс: выходной</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 ИП Соколова Н.С. Все права защищены.</p>
+                <p class="footer-note">Сайт создан на основе информации из публикации о предприятии</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle notification-icon"></i>
+            <div class="notification-text">Добро пожаловать на сайт ИП Соколова Н.С.!</div>
+            <button class="notification-close" id="notificationClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
